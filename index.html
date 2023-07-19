@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:title" content="HITCON CTF 2023"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://ctf2023.hitcon.org"/>
+    <meta property="og:image" content="http://ctf.hitcon.org/img/og_img.png"/>
+    <meta property="og:site_name" content="HITCON CTF 2023"/>
+    <meta property="og:description" content="Online Jeopardy, Sep 8-10 2023"/>
+    <title>HITCON CTF 2023</title>
+
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9T7QYNJTNS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-9T7QYNJTNS');
+    </script>
+    
+  </head>
+  <body>
+    <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">HITCON CTF 2023</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+              <li></li>
+              <li></li>
+              
+            
+            <li>
+              <p id="timer" class="navbar-text"></p>
+              <input type="hidden" id="contest_start_time" value="1694181600.0">
+              <input type="hidden" id="contest_end_time" value="1694354400.0">
+              <input type="hidden" id="current_time" value="1665503089.0">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+<div id="particles-js">
+</div>
+
+<div id="home-masthead">
+  <div class="container">
+    <div class="title">HITCON CTF 2023</div>
+    <div class="subtitle">
+        UTC 09/08 14:00 ~ 09/10 14:00
+    </div>
+    <div class="subtitle">
+    Register: TBD<br>
+    Discord: <a href="https://discord.gg/ypqCsNxHmc">https://discord.gg/ypqCsNxHmc</a>
+    </div>
+  </div>
+</div>
+
+<div id="content" class="container">
+<div id="contest-info">
+
+  <div class="col-lg-6">
+    <h2>競賽說明</h2>
+    <ul>
+      <li>競賽為 48 小時的線上 Jeopardy 形式 CTF</li>
+      <li>競賽採取積分累計制，依分數高低進行排名<br>
+          同分者，依最後一次正確提交的時間判定</li>
+      <li>每道題目的分數將會根據解題隊伍數即時進行動態調整</li>
+      <li>Flag 形式為: <code>hitcon{printable ascii+}</code></li>
+      <li>預賽前七名的國際隊伍以及前兩名的台灣隊伍，將晉級 11 月 14 - 15 號於台北舉行的 HITCON CTF Final (現場 Attack & Defense, 每隊 4 人)</li>
+      <li>2023 HITCON CTF 資格賽<br>
+        下列競賽之冠軍隊伍將自動晉級決賽:
+        <ul>
+          <li>Balsn CTF 2023</li>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Information</h2>
+    <ul>
+      <li>Contest is online jeopardy style CTF for 48 hours.</li>
+      <li>Solving each challenge will get certain points. Teams will be ranked by total points.<br>
+        If the score are the same, the ranking will be determined by the time of last correct submission.</li>
+      <li>The points of each challenge will be dynamically adjusted based on the number of solved teams.</li>
+      <li>Flag format: <code>hitcon{printable ascii+}</code></li>
+      <li>Top 7 international teams and top 2 Taiwan teams will be invited to HITCON CTF Final on Nov 14-15.
+          (Onsite Attack &amp; Defense in Taipei, 4 players / team)</li>
+      <li>Currently 2023 HITCON CTF Qualifying Contests<br>
+          The champions of the following contests will be pre-qualified directly to the final:
+        <ul>
+          <li>Balsn CTF 2023</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>競賽時間</h2>
+    <ul>
+      <li>
+        09/08(五) 22:00 ~ 09/10(日) 22:00 (UTC+8, 48 小時)
+	<a href="https://ctftime.org/event/2019"><img alt="CTFtime" src="https://ctftime.org/favicon.png"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Time</h2>
+    <ul>
+      <li>
+        Sep. 08 14:00 ~ Sep. 10 14:00 (UTC, 48 hours)
+	<a href="https://ctftime.org/event/2019"><img alt="CTFtime" src="https://ctftime.org/favicon.png"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>決賽獎金</h2>
+    <ul>
+      <li>第一名獎金: $10,000 USD</li>
+      <li>第二名獎金: $5,000 USD</li>
+      <li>第三名獎金: $2,000 USD</li>
+      <li>臺灣之星特殊獎: $1,000 USD </li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Awards in Final</h2>
+    <ul>
+      <li>1st place: $10,000 USD</li>
+      <li>2nd place: $5,000 USD</li>
+      <li>3rd place: $2,000 USD</li>
+      <li>Special award for Taiwan teams: $1,000 USD</li>
+    </ul>
+
+  </div>
+
+  <div class="col-lg-6">
+    <h2>比賽注意事項</h2>
+    <ul>
+      <li>競賽期間，做出以下違規事項者將直接取消資格:</li>
+      <ul>
+        <li>進行任何破壞競賽公平公正原則之行為</li>
+        <li>散播、與其它隊伍交換解法或 Flag</li>
+        <li>除競賽中提供的題目外，對競賽系統、參賽者及其它人員進行攻擊</li>
+      </ul>
+      <li>每位參賽者最多僅能參與一個隊伍</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Contest Rules</h2>
+    <ul>
+      <li>During the contest, any of the following behaviors will lead to disqualification:</li>
+      <ul>
+        <li>Any behavior that compromises the fairness of contest</li>
+        <li>Publishing, exchanging challenge solutions or Flags</li>
+        <li>Attacking any personnel, including participants and non-participants, or the contest system itself</li>
+      </ul>
+      <li>Each player can only join one team.</li>
+    </ul>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>保留權利</h2>
+    <p>主辦單位可依狀況調整競賽的內容、流程及規則。</p>
+  </div>
+  <div class="col-lg-6">
+    <h2>Rights Reserved</h2>
+    <p>Organizers may rearrange/modify contest challenges, proceedings, and rules.</p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Advisor</h2>
+    <p class="col-lg-12" style="height: 100px">
+      <a href="https://moda.gov.tw/ADI/"><img class="col-lg-6 col-xs-6" style="/*padding-top: 10px;*/ position: absolute; top: 50%; transform: translateY(-50%);" src="/static/img/ADI-White.png" title="Administration for Digital Industries, moda"></a>
+      <a href="http://hacker.org.tw/"><img class="col-lg-6 col-xs-6" style="position: absolute; top: 50%; left: 50%; transform: translateY(-50%);" src="/static/img/hit_logo_white2.png" title="Hacks in Taiwan Association"></a>
+    </p>
+  </div>
+
+  <div class="col-lg-6">
+    <h2>Hosted by</h2>
+    <p class="col-lg-12" style="height: 100px">
+    <a href="http://hacker.org.tw/"><img class="col-lg-6 col-xs-6"  style="position: absolute; top: 50%; left: 50%; transform: translateY(-50%);" src="/static/img/hit_logo_white2.png" title="Hacks in Taiwan Association"></a>
+    <a href="https://www.itri.org.tw/"><img class="col-lg-6 col-xs-6" style="position: absolute; top: 50%; transform: translateY(-50%);" src="https://ctf.hitcon.org/img/itri.png" title="Industrial Technology Research Institute"></a>
+    </p>
+  </div>
+
+</div><!-- #contest-info -->
+</div>
+
+
+      <hr>
+      <footer id="footer">
+        <h4 class="text-muted">&copy; HITCON CTF Team 2023</h4>
+	<p class="text-muted">Contact: ctf2023@hitcon.org</p>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="/static/js/bootstrap.min.js"></script>
+      <script src="/static/js/markdown-it.min.js"></script>
+      <script src="/static/js/moment.min.js"></script>
+      <script src="/static/js/main.js"></script>
+      <script>
+        var refresh_interval = 30 * 1000;
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+        
+        var team_id = 0;
+        
+        
+        var current_time = Math.floor(Date.now() / 1000);
+        var contest_end_time = 1694354400.0;
+        var contest_end = current_time >= contest_end_time;
+      </script>
+
+      
+<script src="/static/js/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', "/static/js/particles.json", function(){});
+</script>
+      
+  </body>
+</html>
