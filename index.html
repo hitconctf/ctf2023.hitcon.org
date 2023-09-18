@@ -8,12 +8,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <meta name="flag" content="hitcon{HITCON-verse let's gooooooo}">
+    
     <meta property="og:title" content="HITCON CTF 2023"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://ctf2023.hitcon.org"/>
     <meta property="og:image" content="http://ctf.hitcon.org/img/og_img.png"/>
     <meta property="og:site_name" content="HITCON CTF 2023"/>
-    <meta property="og:description" content="Online Jeopardy, Sep 8-10 2023"/>
+    <meta property="og:description" content="Online Jeopardy, Sep 08-10 2023"/>
     <title>HITCON CTF 2023</title>
 
     <link rel="shortcut icon" type="image/png" href="/static/img/favicon.ico"/>
@@ -22,15 +24,7 @@
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/main.css">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9T7QYNJTNS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-9T7QYNJTNS');
-    </script>
+    
     
   </head>
   <body>
@@ -49,7 +43,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-navbar-collapse">
           <ul class="nav navbar-nav">
+            
+              <li><a href="/dashboard/">Dashboard</a></li>
+            
+	    <li><a href="/dashboard/scoreboard">Scoreboard</a></li>
           </ul>
+
           <ul class="nav navbar-nav navbar-right">
             
               <li></li>
@@ -59,8 +58,8 @@
             <li>
               <p id="timer" class="navbar-text"></p>
               <input type="hidden" id="contest_start_time" value="1694181600.0">
-              <input type="hidden" id="contest_end_time" value="1694354400.0">
-              <input type="hidden" id="current_time" value="1665503089.0">
+              <input type="hidden" id="contest_end_time" value="1694358000.0">
+              <input type="hidden" id="current_time" value="1695050028.1694536">
             </li>
           </ul>
         </div>
@@ -74,16 +73,50 @@
   <div class="container">
     <div class="title">HITCON CTF 2023</div>
     <div class="subtitle">
-        UTC 09/08 14:00 ~ 09/10 14:00
+        UTC 09/08 14:00 ~ <s>09/10 14:00</s> <font style="color:red;">09/10 15:00</font><br>
+        <font style="font-size:0.5em;">Due to the instability at the start of the competition, we've decided that we'll extend the competition by 1 hour.</font>
     </div>
     <div class="subtitle">
-    Register: TBD<br>
     Discord: <a href="https://discord.gg/ypqCsNxHmc">https://discord.gg/ypqCsNxHmc</a>
     </div>
   </div>
 </div>
 
-<div id="content" class="container">
+<div id="content" class="container" style="transform: translate(0, -12rem);">
+  <div id="awards-final" class="container text-center">
+    <h3>Awards in Final</h3>
+    <!-- 4x1 grid -->
+    <div class="row text-left">
+      <div class="col-lg-3">
+        <div class="award">
+          <div class="award-title">1st place</div>
+          <div class="award-content">$10,000 USD</div>
+          <div class="award-note">+ Pre-qualification for <strong class="text-warning">DEF CON 32 CTF Final</strong></div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="award">
+          <div class="award-title">2nd place</div>
+          <div class="award-content">$5,000 USD</div>
+          <div class="award-note">-</div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="award">
+          <div class="award-title">3rd place</div>
+          <div class="award-content">$2,000 USD</div>
+          <div class="award-note">-</div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="award">
+          <div class="award-title">Taiwan Star</div>
+          <div class="award-content">$1,000 USD</div>
+          <div class="award-note">Special award for Taiwan team</div>
+        </div>
+      </div>
+    </div>
+  </div>
 <div id="contest-info">
 
   <div class="col-lg-6">
@@ -224,10 +257,10 @@
       <hr>
       <footer id="footer">
         <h4 class="text-muted">&copy; HITCON CTF Team 2023</h4>
-	<p class="text-muted">Contact: ctf2023@hitcon.org</p>
+	<p class="text-muted">Contact: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7d4c3d185878584f7dfdec3d4d8d999d8c5d0">[email&#160;protected]</a></p>
       </footer>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
       <script src="/static/js/bootstrap.min.js"></script>
       <script src="/static/js/markdown-it.min.js"></script>
       <script src="/static/js/moment.min.js"></script>
@@ -238,11 +271,11 @@
           $('[data-toggle="tooltip"]').tooltip();
         });
         
-        var team_id = 0;
+        var team_id = 609;
         
-        
-        var current_time = Math.floor(Date.now() / 1000);
-        var contest_end_time = 1694354400.0;
+
+        var current_time = 1695050028.1694536;
+        var contest_end_time = 1694358000.0;
         var contest_end = current_time >= contest_end_time;
       </script>
 
@@ -251,6 +284,18 @@
 <script>
   particlesJS.load('particles-js', "/static/js/particles.json", function(){});
 </script>
+
+
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9T7QYNJTNS"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9T7QYNJTNS');
+      </script>
       
   </body>
 </html>
